@@ -1,0 +1,184 @@
+/*************
+*** Default ***
+*************/
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ol, ul, li   {
+	list-style: none;
+}
+
+.container {
+    width : 100%;
+    margin: 0 auto;
+    align-content : center;
+    
+}
+/*************
+*** Header ***
+*************/
+.logo {
+    width : 20%;
+    height : 80px;
+    background-color : black;
+    align : right;
+    float : left ;
+    
+}
+.logo img {
+        height : 100px;
+        margin :0px;
+        padding : 0px;
+
+}
+nav {
+    width : 80%;
+    height : 80px;
+}
+nav ul {
+    width : 100%;
+    
+}
+nav ul li.first {
+    width : 15%;
+    font-size : 30px;
+    font-weight : bold;
+    color : red;
+    background-color : rgba(0, 0, 0, 0.8);
+    float :left;
+    text-align : center;
+    height : 80px;
+}
+nav ul li.second {
+    width : 15%;
+    font-size  :30px;
+    color : white;
+    background-color : rgba(0, 0, 0, 0.8);
+    float :left;
+    text-align : center;
+    height : 80px;
+}
+#banner {
+    width : 100;
+    height : 100vh;
+    background-image : url("img/3.jpg");
+    background-repeat: no-repeat;
+    text-align : center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#banner h1 {
+    padding: 8px;
+    background: rgba(255, 0, 0, 0.8);
+    border-radius: 8px;
+    margin: 0;
+    font-size: 64px;
+    font-family: "Roboto Slab", serif;
+    width : 450px;
+    text-align : center;
+
+}
+
+#banner h3 {
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    margin: 0;
+    font-size: 24px;
+    font-family: "Roboto Slab", serif;
+    width : 350px;
+    text-align : center;
+    color : white;
+    margin : 20px 0 0 0;
+
+}
+#main .subtitle {
+    font-size : 40px;
+    font-weight : bold;
+    border-left : solid black;
+    border-right : solid black;
+    width : 15%;
+    margin : 0 0 0 40px;
+    padding : 10px 10px 10px 10px;
+    text-align : center; 
+}
+#main {
+    
+    
+}
+#main .Grid {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+}
+#main .Grid .section{
+    width :100%%;
+    padding : 20px 20px 20px 20px;
+
+}
+#main .Grid .section img {
+    width : 100%;
+}
+#main .Grid .section .title {
+    
+}
+#main .Grid .section h3 {
+    display : box;
+    margin : 20px 0 20px;
+    padding : 20px 0 20px; 
+    
+}
+#main .Grid .section .readmore{
+    margin : 10px 0 10px 20px;
+    padding : 10px 0 10px; 
+    border : solid 3px black;
+    width : 100px;
+    text-align : center;
+}
+#main div .sourcecode {
+    display : box;
+    width : 80%;
+    padding : 10px 10% 10px;
+    text-align : center;
+
+}
+#main div .github {
+    margin : 10px 0 10px 45%;
+    padding : 10px 0 10px; 
+    border : solid 3px black;
+    width : 150px;
+    text-align : center;
+
+}
+
+#footer .Grid {
+    display: grid;
+    grid-template-columns: 0.2fr 0.4fr 1fr 0.2fr;;
+    
+}
+#footer .Grid .quicklink,.followus {
+    background-color : black;
+    color : white;
+}
+#footer .Grid .quicklink {
+    padding : 30px 0 30px 30px;
+}
+#footer .Grid .quicklink h3{
+    margin : 0 0 10px 0;
+}
+#footer .Grid .followus {
+    align-content : center;
+}
