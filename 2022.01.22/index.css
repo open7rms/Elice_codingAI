@@ -1,0 +1,230 @@
+/*************
+*** Default ***
+*************/
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ol, ul, li   {
+	list-style: none;
+}
+/*************
+*** main ***
+*************/
+#container {
+    width : 960px;
+    margin: 0 auto;
+    align-content : center;
+    
+    
+}
+#intro {
+    width : 960px;
+    height : 40px;
+    padding-top : 20px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    border-bottom: solid 1px gray;
+    background-color : white;
+    
+}
+#intro > .logo {
+    float : left;
+    width : 60%;
+    height : 40px;
+    text-align : left;
+    
+}
+
+
+#intro >.navi {
+    float : right;
+    width : 40%;
+    height : 40px;
+
+    margin: 0;
+    padding: 0;
+
+}
+#intro >.navi .nav{
+    float : left;
+    width : 20%;
+    height : 40px;
+    text-align : left;
+    text-justify: middle;
+}
+#intro >.navi .nav svg{
+    display : block;
+    text-align : center;
+}     
+#intro >.navi .nav svg:hover{
+    text-align : center;
+    box-shadow: gray 2px 1px 3px;
+}    
+
+#profile {
+    clear : both;
+    text-align : center;
+    padding : 100px;
+}
+
+#profile .profphoto {
+    float : left;
+    width : 50%;
+}
+
+#profile .major {
+    float : right;
+    width : 50%;
+    text-align : left;
+    color : rgb(92, 91, 91);
+    font-family :'Courier New', Courier, monospace;
+    letter-spacing : .2rem;
+    font-size : 19px;
+    
+}
+
+#profile .major h3 {
+    display : box;
+    margin : 20px 0 10px;
+}
+#planed{
+    clear  :both;
+    height : 250px;
+    margin-top : 20px;
+    padding-top : 20px;
+    
+}
+#planed p{
+    display : box;
+    width : 80%;
+    padding : 40px 100px 30px;   
+    color : rgb(37, 37, 37);
+    font-family :'Courier New', Courier, monospace;
+    font-size : 19px;
+    letter-spacing : .3rem;
+    
+}
+#interested{
+    height : 320px;
+}
+#interested p{
+    display : box;
+    width : 80%;
+    padding : 40px 100px 30px;   
+    color : rgb(37, 37, 37);
+    font-family :'Courier New', Courier, monospace;
+    font-size : 19px;
+    letter-spacing : .3rem;
+    
+}
+#expectation {
+    height : 400px;
+
+}
+#expectation p{
+    display : box;
+    width : 80%;
+    padding : 40px 100px 30px;   
+    color : rgb(37, 37, 37);
+    font-family :'Courier New', Courier, monospace;
+    font-size : 19px;
+    
+    letter-spacing : .3rem;
+    
+}
+#favorite {
+    
+}
+#favorite div{
+    float : left;
+    width : 33.33%;
+
+    
+}
+#favorite div img{
+    height : 300px;
+    border : solid 5px 5px 5px 5px gray;
+    border-radius: 10px;
+    padding : 5px 5px 5px 5px;
+}
+
+#favorite div img:hover{
+
+    box-shadow: gray 2px 1px 3px;
+}
+
+  @media (max-width: 700px) {
+    #container {
+        width : 600px;
+    }
+    #intro {
+        width : 600px;
+        height : 80px;
+       
+        
+    }
+    #intro > .logo {
+        text-align : center;
+        width : 100%;
+        height : 40px;
+    }
+    
+    
+    #intro >.navi {
+        width : 100%;
+    }
+    #intro >.navi .nav{
+        text-align : center;
+        padding-left : 50px;
+        width : 10%;
+    }
+    #profile .profphoto {
+        width : 100%;
+    }
+    
+    #profile .major {
+        width : 100%;
+        
+    }
+    #planed{
+        height : 350px;  
+    }
+    #planed h3,
+    #interested h3,
+    #interested h4,
+    #expectation h3,
+    #favorite h3{
+        text-align : center;
+    }
+    #interested{
+        height : 320px;
+    }
+
+    #expectation {
+        height : 500px;
+    
+    }
+    #favorite div{
+        width : 50%;
+        text-align : center;
+    }
+    #favorite div img{
+        height : 280px;
+        border : solid 5px 5px 5px 5px gray;
+        border-radius: 10px;
+        padding : 5px 5px 5px 5px;
+    }
+  }
