@@ -169,11 +169,14 @@ ol, ul, li   {
   @media (max-width: 700px) {
     #container {
         width : 600px;
+        margin : 0px;
     }
     #intro {
         width : 600px;
         height : 80px;
-       
+        overflow: hidden;
+        position: fixed;
+        top: 0;
         
     }
     #intro > .logo {
@@ -223,6 +226,89 @@ ol, ul, li   {
     }
     #favorite div img{
         height : 280px;
+        border : solid 5px 5px 5px 5px gray;
+        border-radius: 10px;
+        padding : 5px 5px 5px 5px;
+    }
+    #planed p{
+        display : box;
+        width : 90%;
+        padding : 40px 50px 30px; 
+    }
+
+    #interested p{
+        display : box;
+        width : 90%;
+        padding : 40px 50px 30px; 
+    }
+ 
+    #expectation p{
+        display : box;
+        width : 90%;
+        padding : 40px 50px 30px;   
+    }
+  }
+  @media (max-width: 500px) {
+    #container {
+        width : 480px;
+        margin : 0;
+    }
+    #intro {
+        width : 480px;
+        height : 80px;
+       
+        
+    }
+    #intro > .logo {
+        text-align : center;
+        width : 100%;
+        height : 40px;
+    }
+    
+    
+    #intro >.navi {
+        width : 100%;
+    }
+    #intro >.navi .nav{
+        text-align : center;
+        padding-left : 50px;
+        width : 8%;
+    }
+    #profile .profphoto {
+        width : 100%;
+    }
+    
+    #profile .major {
+        width : 100%;
+        
+    }
+    #planed{
+        height : 350px;  
+    }
+    #planed h3,
+    #interested h3,
+    #interested h4,
+    #expectation h3,
+    #favorite h3{
+        text-align : center;
+        display : box;
+        width :90%;
+        padding : 0 10px 0px;
+    }
+    #interested{
+        height : 320px;
+    }
+
+    #expectation {
+        height : 650px;
+    
+    }
+    #favorite div{
+        width : 100%;
+        text-align : center;
+    }
+    #favorite div img{
+        height : 380px;
         border : solid 5px 5px 5px 5px gray;
         border-radius: 10px;
         padding : 5px 5px 5px 5px;
