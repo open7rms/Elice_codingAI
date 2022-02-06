@@ -8,6 +8,6 @@ current=0
 
 while len(arr)>0 :
       current = (current+ int(hop)-1)%len(arr)
-      result.append(arr.pop(current))
+      result.append(str(arr.pop(current)))
             
-print(result)            
+print("<"+", ".join(result)+">")        
