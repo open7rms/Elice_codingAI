@@ -1,20 +1,30 @@
 import sys
-
-input = sys.stdin.readline
-sun,sang = input().split()
 suncd=[]
 sangcd=[]
-for i in range(int(sun)):
-      suncd.append(int(input()))
+while True :
+      sun,sang = sys.stdin.readline().split()
+      if int(sun)== 0 and int(sang)==0 :
+            break
 
-for j in range(int(sang)):
-      sangcd.append(int(input()))
+      for i in range(int(sun)):
+            suncd.append(int(sys.stdin.readline()))
 
-sun,sang = input().split()
-
+      for j in range(int(sang)):
+            sangcd.append(int(sys.stdin.readline()))
+      
 cd=0
-for same in suncd:
-      if same in sangcd :
-            cd =cd+1
-
+for same in suncd :
+      low =0
+      high=len(suncd)-1
+      while low<=high :
+            mid=int((low+high)/2)
+            if sangcd[mid] == same :
+                  print(sangcd[mid], same)
+                  cd+=1
+                  break
+            elif sangcd[mid] > same :
+                  high =mid-1
+            elif sangcd[mid] < same :
+                  low= mid+1
+            
 print(cd)
