@@ -11,10 +11,18 @@ for i in range(n) :
       y[b]=y.get(b,0)+1
 answerx=0
 for xv in x.values() :
-      answerx=answerx+xv*(xv-1)*0.5
+      if xv >=2 :
+            answerx+=1
+      
+
+      #answerx=answerx+xv*(xv-1)*0.5
 
 answery=0
 for yv in y.values() :
-      answery=answery+yv*(yv-1)*0.5
+      if yv >=2:
+            answery+=1
+
+      #answery=answery+yv*(yv-1)*0.5
 
 print(int(answerx)+int(answery))
+
