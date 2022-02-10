@@ -18,13 +18,13 @@ for same in suncd :
       high=len(suncd)-1
       while low<=high :
             mid=int((low+high)/2)
-            if sangcd[mid] == same :
-                  print(sangcd[mid], same)
-                  cd+=1
-                  break
-            elif sangcd[mid] > same :
+            #if sangcd[mid] == same :
+            #      print(sangcd[mid], same)
+            #      cd+=1
+            #      break
+            if sangcd[mid] >= same :
                   high =mid-1
-            elif sangcd[mid] < same :
+            else :#if sangcd[mid] < same :
                   low= mid+1
             
-print(cd)
+print(low)
