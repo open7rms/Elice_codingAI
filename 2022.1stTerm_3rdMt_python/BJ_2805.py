@@ -18,15 +18,12 @@ high=max(piles)
 while low<=high :
     mid=(low+high)//2
     calNeed=diff(piles,mid)
-    if calNeed==need :
-        print(mid)
-        break
-    elif calNeed > need:
+    if calNeed >= need:
         low = mid+1
         #print("high",mid,diff(piles,mid),low)
-    elif calNeed < need:
+    else :# calNeed < need:
         high =mid-1
         #print("low",mid,diff(piles,mid),high)
-
+print(high)
 
 #print(pilen,need,piles)
