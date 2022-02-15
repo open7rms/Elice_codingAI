@@ -5,9 +5,18 @@ for i in range(loopn) :
     productn = int(input())
     prices = list(map(int,input().split()))
     result =[]
-    for price in prices :
-        if price*0.75 in prices : 
-            result.append(price*0.75)
-    print(result) 
+    while(len(prices)) :
+
+        if prices[0]*4/3 in prices : 
+            prices.pop(prices.index(prices[0]*4/3))
+            result.append(prices.pop(0))
+            
+        else :
+            prices.pop(0)
+    #print(result) 
     resultg.append(result)
-#print(resultg) 
+for i in range(loopn):
+    print("Case #{}:".format(i+1,),end=" ") 
+    for j in range(len(resultg[i])):
+        print(resultg[i][j],end=" ")
+    print()
