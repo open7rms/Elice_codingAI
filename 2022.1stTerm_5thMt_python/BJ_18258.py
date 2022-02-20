@@ -1,18 +1,18 @@
 import sys
 from collections import deque
-input=sys.stdin.readline
-commandNr=int(input())
+#input=sys.stdin.readline
+commandNr=int(sys.stdin.readline())
 stack=deque([])
 #result=[]
 for commandi in range(commandNr) : 
-    command=input().split()
+    command=sys.stdin.readline().split()
     if(command[0]=="push") :
         stack.append(command[1])
     elif(command[0]=="pop") :
         if len(stack)==0:
             print(-1)
         else :
-            print(stack.pop(0))
+            print(stack.popleft())
     elif(command[0]=="size") :
         print(len(stack))
     elif(command[0]=="empty"):
