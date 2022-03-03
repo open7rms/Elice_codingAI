@@ -1,24 +1,32 @@
 import sys
+import heapq
 loop=int(input())
 
 for i in range(loop) :
     inloop=int(input())
-    print(inloop)
+    #print(inloop)
     que=[]
     for i in range(inloop) :
         op, num =sys.stdin.readline().split(" ")
         #print (op, num)
         if op =="I" :
-            que.append(int(num))
-        elif op =="D" and num =="-1" :
+            heapq.heappush(que,int(num))
+        elif op =="D" and int(num) == -1 :
+            
             if(len(que)==0):
                 continue
-            que.pop(que.index(min(que)))
+            heapq.heappop(que)
+
         else :
             if(len(que)==0):
                 continue
-            que.pop(que.index(max(que)))
+            #print('before',que)
+            que=heapq.nlargest(len(que),que)[1:]
+            heapq.heapify(que)
+            
     if len(que)==0 :
         print('Empty')
     else :
-        print('output ',max(que)," ",min(que))
+        smallest=que[0]
+        biggest =heapq.nlargest(len(que),que)[0]
+        print(biggest,smallest)
