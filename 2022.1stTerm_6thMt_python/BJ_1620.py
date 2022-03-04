@@ -1,9 +1,13 @@
 import sys
 
 listNr,qNr =map(int,input().split())
-poketmon=[]
+poketmon=dict()
+poketmonL=[]
 for i in range(listNr) :
-    poketmon.append(sys.stdin.readline().rstrip("\n"))
+    mon=sys.stdin.readline().rstrip("\n")
+    poketmon[mon]=i+1
+    poketmonL.append(mon)
+
 for i in range(qNr):
     question=sys.stdin.readline().rstrip("\n")
     
@@ -11,6 +15,6 @@ for i in range(qNr):
         num=int(question)
 
     except :
-        print(poketmon.index(question)+1)
+        print(poketmon[question])
     else :
-        print(poketmon[num-1])
+        print(poketmonL[num-1])
